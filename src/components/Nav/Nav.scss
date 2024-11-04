@@ -1,0 +1,47 @@
+.nav {
+  height: 100%;
+  width: 100%;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    transition: 0.3s;
+    width: 25%;
+    text-align: center;
+    a {
+      color: grey;
+      font-size: 30px;
+    }
+    a:hover {
+      color: hsl(60, 50%, 50%);
+    }
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__link {
+    &-active {
+      color: white !important;
+      border-bottom: 3px solid green;
+    }
+    &-active:hover {
+      opacity: 1;
+      border-bottom-color: hsl(120, 50%, 50%);
+    }
+  }
+}
